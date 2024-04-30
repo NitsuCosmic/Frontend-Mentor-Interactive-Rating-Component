@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style/reset.css" />
+		<link rel="stylesheet" href="./style/style.css" />
+
+		<title>Frontend Mentor | Interactive rating component</title>
+	</head>
+	<body>
+		<main>
+			<section class="star-rating-wrapper" id="star-rating-wrapper">
+				<div class="star-rating__img-container">
+					<img
+						src="./images/icon-star.svg"
+						alt="Star icon"
+						class="star-rating__img"
+					/>
+				</div>
+				<h1 class="star-rating__heading">How did we do?</h1>
+				<p class="star-rating__description">
+					Please let us know how we did with your support request. All feedback
+					is appreciated to help us improve our offering!
+				</p>
+				<form class="star-rating__form" id="star-rating-form">
+					<div class="form__inputs-container">
+						<label for="one-star" class="form__label">1</label>
+						<input
+							type="radio"
+							value="1"
+							name="one-star"
+							id="one-star"
+							class="form__input"
+						/>
+						<label for="two-stars" class="form__label">2</label>
+						<input
+							type="radio"
+							value="2"
+							name="two-stars"
+							id="two-stars"
+							class="form__input"
+						/>
+						<label for="three-stars" class="form__label">3</label>
+						<input
+							type="radio"
+							value="3"
+							name="three-stars"
+							id="three-stars"
+							class="form__input"
+						/>
+						<label for="four-stars" class="form__label">4</label>
+						<input
+							type="radio"
+							value="4"
+							name="four-stars"
+							id="four-stars"
+							class="form__input"
+						/>
+						<label for="five-stars" class="form__label">5</label>
+						<input
+							type="radio"
+							value="5"
+							name="five-stars"
+							id="five-stars"
+							class="form__input"
+						/>
+					</div>
+					<button type="submit" class="form__button">Submit</button>
+				</form>
+			</section>
+			<section class="thank-you__wrapper" id="thank-you-wrapper">
+				<div class="thank-you__img-container">
+					<img
+						src="./images/illustration-thank-you.svg"
+						alt="Star icon"
+						class="thank-you__img"
+					/>
+				</div>
+				<span class="thank-you__selected-stars" id="selected-stars"></span>
+				<h1 class="thank-you__heading">Thank you!</h1>
+				<p class="thank-you__description">
+					We appreciate you taking the time to give a rating. If you ever need
+					more support, don't hesitate to get in touch!
+				</p>
+			</section>
+		</main>
+
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by
+			<a
+				href="https://www.frontendmentor.io/profile/NitsuCosmic"
+				target="_blank"
+				>Nitsu</a
+			>.
+		</div>
+		<script src="./js/script.js" type="module"></script>
+	</body>
+</html>
